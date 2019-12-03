@@ -1,3 +1,7 @@
+* {
+    font-family: courier, monospace;
+}
+
 body {
     background-color: black;
     background-image: radial-gradient(
@@ -6,7 +10,6 @@ body {
     height: 100vh;
     color: white;
     color: #fff;
-    font-family: courier, monospace;
     text-shadow: 0 0 5px #C8C8C8;
     overflow: hidden;
     overflow-x: hidden;
@@ -16,7 +19,7 @@ body {
     height: 120%;
     width: 120%;
     position: relative;
-    z-index: 2; 
+    z-index: -1; 
     left: 0;
     top: 0;
     opacity: 10%;
@@ -49,6 +52,18 @@ body {
     display: inline;
 }
 
+.btn {
+    border-radius: 0%;
+    font-size: 20px;
+    z-index: 100;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+pushForward {position: relative;}
+.pushForward:before {content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1000;}
 
 /* Effects */
 
@@ -59,6 +74,7 @@ body ::after {
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: -2;
     background: repeating-linear-gradient(
       0deg,
       rgba(black, 0.15),
@@ -208,7 +224,7 @@ body ::after {
     right: 0;
     background: rgba(18, 16, 16, 0.1);
     opacity: 0;
-    z-index: 2;
+    z-index: 1;
     pointer-events: none;
     animation: flicker 0.15s infinite;
   }
@@ -221,10 +237,11 @@ body ::after {
     bottom: 0;
     right: 0;
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
+    z-index: 1;
     background-size: 100% 5px, 5px 100%;
     pointer-events: none;
   }
+
   .crt {
     animation: textShadow 1.6s infinite;
   }

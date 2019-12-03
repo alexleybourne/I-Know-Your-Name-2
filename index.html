@@ -14,15 +14,15 @@
 
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
 </head>
-<body onload="loaded()" >
-    <img class="overlay" style="z-index: 2;" src="texture1.jpg" data-tilt data-tilt-max="5" data-tilt-speed="40" data-tilt-perspective="5000"/>
+<body onload="loaded()"data-tilt data-tilt-max="5" data-tilt-speed="40" data-tilt-perspective="5000" >
+    <img class="overlay" src="texture1.jpg"/>
     <div class="crt" >
         <div class="console" >
             <div id="textArea">
-            <p id="title" ></p>
+                <input id="startButton" class="btn pushforward" type="button" value="START" onclick="start();" />
+            <!-- <p id="title" ></p>
             <p class="small" id="subTitle"></p>
-            <br><br><br><br><br>
-            <p class="small" id="playText"></p>
+            <p class="small" id="playText"></p> -->
             </div>
         </div>
     </div>

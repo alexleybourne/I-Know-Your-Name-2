@@ -1,12 +1,23 @@
 function loaded() {
+}
+
+
+var lastID = ""
+var lastTXT = ""
+var activeC = 1
+var consoleText = document.getElementById("textArea")
+
+function start(){
+    consoleText.innerHTML = `<p id="title" ></p>
+    <p class="small" id="subTitle"></p>
+
+    <p class="small" id="playText" style="padding: 50px 0 0 0;"></p>`
+
     typer("I KNOW YOUR NAME" , 150, "title", 500)
     typer("Created by Alex Leybourne", 100, "subTitle", 4000)
     typer("Press any Key to begin...", 100, "playText", 8000)
 }
 
-var lastID = ""
-var lastTXT = ""
-var activeC = 1
 
 
 function typer(text, speed, id, timeout) {
