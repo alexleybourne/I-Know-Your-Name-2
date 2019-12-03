@@ -9,9 +9,19 @@ body {
     font-family: courier, monospace;
     text-shadow: 0 0 5px #C8C8C8;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
-
+.overlay {
+    height: 120%;
+    width: 120%;
+    position: relative; 
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    opacity: 10%;
+    animation: flicker 0.0001s linear infinite;
+}
 
 .console {
     font-size:30px;
