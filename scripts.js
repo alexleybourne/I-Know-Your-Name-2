@@ -1,8 +1,10 @@
 function loaded() {
-    typer("I KNOW YOUR NAME" , 50, "title", 0)
-    typer("Created by Alex Leybourne", 50, "subTitle", 1000)
+    typer("I KNOW YOUR NAME" , 50, "title", 500)
+    typer("Created by Alex Leybourne", 50, "subTitle", 1500)
 }
 
+
+var tPosition = 0
 
 
 function typer(text, speed, id, timeout) {

@@ -12,8 +12,9 @@ body {
 }
 
 
+
 .console {
-    font-size:20px;
+    font-size:30px;
     line-height: 0px;
     text-align:center;
     height:200px;
@@ -28,7 +29,7 @@ body {
 }
 
 .small {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 
@@ -44,9 +45,9 @@ body ::after {
     background: repeating-linear-gradient(
       0deg,
       rgba(black, 0.15),
-      rgba(black, 0.15) 1px,
-      transparent 1px,
-      transparent 2px
+      rgba(black, 0.15) 10px,
+      transparent 10px,
+      transparent 20px
     );
 }
 
@@ -204,10 +205,11 @@ body ::after {
     right: 0;
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
     z-index: 2;
-    background-size: 100% 2px, 3px 100%;
+    background-size: 100% 5px, 5px 100%;
     pointer-events: none;
   }
   .crt {
     animation: textShadow 1.6s infinite;
   }
 
+  
