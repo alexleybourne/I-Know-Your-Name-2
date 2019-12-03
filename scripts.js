@@ -1,6 +1,6 @@
 function loaded() {
-    typer("I KNOW YOUR NAME" , 50, "title", 500)
-    typer("Created by Alex Leybourne", 50, "subTitle", 1500)
+    typer("I KNOW YOUR NAME" , 150, "title", 500)
+    typer("Created by Alex Leybourne", 100, "subTitle", 4000)
 }
 
 
