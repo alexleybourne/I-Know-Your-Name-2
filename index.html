@@ -13,16 +13,19 @@
     <title>I Know Your Name</title>
 
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-    
 </head>
-<body onload="loaded()">
-    <img class="overlay" src="texture1.jpg" />
-    <div class="crt">
-        <div class="console">
-            <p id="title"></p>
+<body onload="loaded()" >
+    <img class="overlay" style="z-index: 2;" src="texture1.jpg" data-tilt data-tilt-max="5" data-tilt-speed="40" data-tilt-perspective="5000"/>
+    <div class="crt" >
+        <div class="console" >
+            <div id="textArea">
+            <p id="title" ></p>
             <p class="small" id="subTitle"></p>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
+    <!-- Tilt Effect -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 </html>

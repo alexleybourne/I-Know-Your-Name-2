@@ -15,7 +15,7 @@ body {
 .overlay {
     height: 120%;
     width: 120%;
-    position: relative; 
+    position: relative;
     z-index: 2; 
     left: 0;
     top: 0;
@@ -41,6 +41,12 @@ body {
 
 .small {
     font-size: 16px;
+}
+
+.cursor {
+    opacity: 1;
+    animation: blinker 0.2s linear infinite;
+    display: inline;
 }
 
 
@@ -231,9 +237,6 @@ body ::after {
     }
   }
 
-  .blink_me {
-    animation: blinker 1s linear infinite;
-  }
   
   @keyframes
    blinker {

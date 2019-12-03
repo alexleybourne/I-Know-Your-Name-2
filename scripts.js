@@ -4,23 +4,38 @@ function loaded() {
 }
 
 
-var tPosition = 0
-
 
 function typer(text, speed, id, timeout) {
 
+    
+
     var i = 0;
     var txt = text
-    var speed = speed
+    var newtxt = ""
+    var lastID = ""
+    var lastTXT = ""
+
+    var element = document.getElementById(id)
     
+    if(lastID != ""){
+            document.getElementById(lastID).innerHTML = lastTXT
+    }
 
     setTimeout(type, timeout)
     function type() {
     if (i < txt.length) {
-        document.getElementById(id).innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(type, speed);
-    } 
+        element.innerHTML = newtxt
+        element.innerHTML += txt.charAt(i)
+        newtxt = element.innerHTML
+        element.innerHTML += `<p class="cursor">█</p>`
+        i++
+        setTimeout(type, speed)
+    } else {
+        element.innerHTML = newtxt
+        element.innerHTML += `<p class="cursor"> █</p>`
+        lastID = id
+        lastTXT = "POOP"
+    }
     }
 
 }
