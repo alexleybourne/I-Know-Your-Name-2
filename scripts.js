@@ -13,12 +13,19 @@ var lastTXT = ""
 var activeC = 1
 var consoleText = document.getElementById("textArea")
 
+// Sounds
+var typingSound = new Audio("./sfx/typing1.wav")
+var beepSound = new Audio("./sfx/beep.wav")
+
 function start(){
-    console.log("Test")
-    location.reload()
+    consoleClear()
+    typer("EPSTEIN DIDN'T KILL HIMSELF" , 150, "textMain", 500, "text")
 }
 
-
+// Clears Text
+function consoleClear() {
+    consoleText.innerHTML = `<p id="textMain" ></p>`
+}
 
 function typer(text, speed, id, timeout, inputType) {
 
@@ -27,7 +34,7 @@ function typer(text, speed, id, timeout, inputType) {
     var newtxt = ""
     var element = document.getElementById(id)
 
-    var typingSound = new Audio("./sfx/typing1.wav")
+    
 
     setTimeout(type, timeout)
     function type() {
@@ -62,13 +69,12 @@ function typer(text, speed, id, timeout, inputType) {
 
         // inputs the code quick with no cursor
         if(inputType === "code") {
-            typingSound.currentTime = 0
-            typingSound.play()
+            beepSound.play()
             element.innerHTML = txt
             lastID = id
             activeC++
         }
     
     }
-
+    activeC = 1
 }
