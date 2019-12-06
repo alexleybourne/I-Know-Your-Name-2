@@ -24,7 +24,6 @@ body {
     left: 0;
     top: 0;
     opacity: 10%;
-    animation: flicker 0.0001s linear infinite;
 }
 
 .console {
@@ -57,7 +56,6 @@ body {
     border-radius: 0%;
     font-size: 20px;
     z-index: 100;
-    animation: flicker-in-1 2s linear both;
 }
 
 .btn:focus {
@@ -90,62 +88,8 @@ body ::after {
     0% {
       opacity: 0.27861;
     }
-    5% {
-      opacity: 0.34769;
-    }
-    10% {
-      opacity: 0.23604;
-    }
-    15% {
-      opacity: 0.90626;
-    }
-    20% {
-      opacity: 0.18128;
-    }
-    25% {
-      opacity: 0.83891;
-    }
-    30% {
-      opacity: 0.65583;
-    }
-    35% {
-      opacity: 0.67807;
-    }
-    40% {
-      opacity: 0.26559;
-    }
-    45% {
-      opacity: 0.84693;
-    }
     50% {
       opacity: 0.96019;
-    }
-    55% {
-      opacity: 0.08594;
-    }
-    60% {
-      opacity: 0.20313;
-    }
-    65% {
-      opacity: 0.71988;
-    }
-    70% {
-      opacity: 0.53455;
-    }
-    75% {
-      opacity: 0.37288;
-    }
-    80% {
-      opacity: 0.71428;
-    }
-    85% {
-      opacity: 0.70419;
-    }
-    90% {
-      opacity: 0.7003;
-    }
-    95% {
-      opacity: 0.36108;
     }
     100% {
       opacity: 0.24387;
@@ -263,99 +207,5 @@ body ::after {
     }
   }
 
-  @keyframes flicker-in-1 {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 0;
-    }
-    10.1% {
-      opacity: 1;
-    }
-    10.2% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 0;
-    }
-    20.1% {
-      opacity: 1;
-    }
-    20.6% {
-      opacity: 0;
-    }
-    30% {
-      opacity: 0;
-    }
-    30.1% {
-      opacity: 1;
-    }
-    30.5% {
-      opacity: 1;
-    }
-    30.6% {
-      opacity: 0;
-    }
-    45% {
-      opacity: 0;
-    }
-    45.1% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 1;
-    }
-    55% {
-      opacity: 1;
-    }
-    55.1% {
-      opacity: 0;
-    }
-    57% {
-      opacity: 0;
-    }
-    57.1% {
-      opacity: 1;
-    }
-    60% {
-      opacity: 1;
-    }
-    60.1% {
-      opacity: 0;
-    }
-    65% {
-      opacity: 0;
-    }
-    65.1% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 1;
-    }
-    75.1% {
-      opacity: 0;
-    }
-    77% {
-      opacity: 0;
-    }
-    77.1% {
-      opacity: 1;
-    }
-    85% {
-      opacity: 1;
-    }
-    85.1% {
-      opacity: 0;
-    }
-    86% {
-      opacity: 0;
-    }
-    86.1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+
   
