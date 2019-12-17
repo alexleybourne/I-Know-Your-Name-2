@@ -14,14 +14,15 @@
 
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
 </head>
-<body onload="loaded()"data-tilt data-tilt-max="5" data-tilt-speed="40" data-tilt-perspective="1500" >
-    <img class="overlay" src="texture.jpg"/>
+<body onload="loaded(), browserCheck()"data-tilt data-tilt-max="5" data-tilt-speed="40" data-tilt-perspective="1500" >
+    <img class="overlay" src="images/texture.jpg"/>
     <div class="crt" >
         <div class="console" id="console">
             <div id="textArea">
             <p id="title" ></p>
             <p class="small" id="subTitle"></p>
             <div id="startButtonArea"></div>
+            <!-- <img src="images/powerButton.svg"> -->
             </div>
         </div>
     </div>

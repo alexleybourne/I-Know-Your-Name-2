@@ -1,6 +1,6 @@
 * {
     font-family: courier, monospace;
-    cursor: url('cursor.png'), pointer;
+    cursor: url('images/cursor.png'), pointer;
 }
 
 body {
@@ -28,7 +28,6 @@ body {
 
 .console {
     font-size:30px;
-    line-height: 0px;
     text-align:center;
     height:200px;
     width:600px;
